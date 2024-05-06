@@ -10,8 +10,7 @@ function App() {
   const fetchData = () => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(apiResult => apiResult.json())
-      .then(data => {
-        setPosts(data);
+      .then(data => { setPosts(data);
         categorizePosts(data);
       });
   };
